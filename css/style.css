@@ -1,0 +1,325 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+/*前頁共通定義  */
+
+/*箇条書きのブレットポイントなし
+---------------------*/
+li{
+	list-style: none;
+}
+
+/*リンクの下線なし
+---------------------*/
+a{
+	color: black;
+	text-decoration: none;
+}
+
+
+/*左右の余白はビューボードの10%
+---------------------*/
+.wrapper{
+	margin: auto 10vw;
+}
+
+
+/*h1の位置
+---------------------*/
+h1{
+	text-align: center;
+}
+
+
+/*sectionの上段の予約
+---------------------*/
+section:not(:first-child){
+	margin-top: 120px;
+}
+
+/*タイトル定義
+---------------------*/
+.title{
+	color: yellow;
+	font-size: 24px;
+}
+/*about_msg01
+---------------------*/
+.about_msg01{
+	margin-top: 24px;
+	text-align: center;
+	font-size: 16px;
+}
+/*about_msg0x
+---------------------*/
+.about_msg02{
+	margin-top: 64px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.about_msg03{
+	margin-top: 10px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.slide-image{
+	margin-top: 80px;
+}
+
+/*ボタン定義
+---------------------*/
+.squqre-btn {
+	width: 300px;
+	height: 60px;
+	background-color: yellow;
+	margin: auto;
+	text-align: center;
+	font-size: 21px;
+	color:aliceblue;
+}
+
+/*各ページ定義  */
+/*トップのメインビュー
+---------------------*/
+.mv{
+	background-image: url(../img/mainbg.png);
+	min-height: 70vh;
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+
+	position: relative;
+}
+
+.keymsgs {
+	position: absolute;
+	left: 30vw;
+	bottom: 15vw;
+}
+
+.keymsg01{
+	font-size: 48px;
+	color: white;
+
+}
+
+.keymsg02 {
+	margin-top 40px;
+	font-size: 36px;
+	color: white;
+}
+/*top画面のナビ横並び
+---------------------*/
+/*ロゴ
+---------------------*/
+.navi{
+	display: flex;
+}
+.logo-image {
+	font-size: 21px;
+	margin-top: xxpx;
+}
+
+.navi-list-item {
+	display: flex;
+	justify-content: space-between;
+	width: 50rem;
+	margin-left: 25rem;
+	font-size: 24px;
+	font-weight: 800;
+}
+
+/* section2 about */
+
+.slider {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*Section3 Cource
+---------------------*/
+.cource-msg {
+	max-width: 32rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cource-msg-contents{
+	text-align: center;
+}
+
+	.cource-school {
+	align-items: center;
+}
+.cource-school-contents {
+	margin-top: 40px;
+	width: 32rem;
+
+}
+.farm-image{
+	margin: 64px;
+	width: 30vw;
+	margin-right: 43px;
+}
+.farm-image img{
+	width: 100%;
+}
+.cource .cource-contents .farm {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+.cource-farm-title{
+	align-items: center;
+}
+.cource-farm-contents{
+	margin-top: 40px;
+	width: 30rem;
+	text-align: left;
+}
+
+.cource .cource-contents .school {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.school-image {
+	width: 30vw;
+	margin-left: 43px;
+}
+
+.school-image img {
+	width: 100%;
+}
+
+.cource-school {
+	align-items: center;
+}
+
+.cource-school-contents {
+	margin-top: 40px;
+	width: 32rem;
+
+}
+
+.cource .cource-contents .examination {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.examination-image {
+	width: 30vw;
+}
+
+.examination-image img {
+	width: 100%;
+}
+
+.cource-examination {
+	align-items: center;
+}
+
+.cource-examination-contents {
+	margin-top: 40px;
+	width: 32rem;
+
+}
+
+/* Section4 news */
+.news-item{
+	width: 330px;
+}
+.news-item img{
+	width: 100%;
+}
+.news-list{
+	display: flex;
+	justify-content: center;
+	margin-top: 64px;
+}
+.news-item{
+	margin-right: 32px;
+}
+.squqre-btn{
+	margin-top: 56px;
+}
+/* Section5  ACCESS*/
+.kaisyagaiyo{
+	margin-top: 24px;
+	text-align: center;
+}
+.map{
+	margin-top: 64px;
+}
+.information{
+	margin-top: 64px;
+	text-align: center;
+}
+.name{
+	margin-top: 24px;
+}
+.adress {
+	margin-top: 24px;
+}
+.tel {
+	margin-top: 24px;
+}
+.fax {
+	margin-top: 24px;
+}
+.mail {
+	margin-top: 24px;
+}
+/* Section6 CONTACT */
+.contact-form-msg{
+	text-align: center;
+}
+.contact-form-msg-header{
+	margin-top: 32px;
+}
+.contact-form-msg-msg01{
+	margin-top: 32px;
+}
+.contact-form-msg-msg02 {
+	margin-top: 32px;
+}
+.contact-body{
+	margin-top: 80px;
+	border: 1.5px solid grey;
+	padding: 50px 30px;
+}
+.contact-body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*
+---------------------*/
+/*footerの定義
+---------------------*/
